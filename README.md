@@ -1,7 +1,7 @@
 # Magento2 ShowAddressFields
 Show Address Fields in Customer Registration Form.
 
-<img alt="Magento2 ShowAddressFields" src="http://i.imgur.com/XJbi1cB.png?1" style="width:100%"/>
+<img alt="Magento2 ShowAddressFields" src="http://i.imgur.com/cefrqui.png" style="width:100%"/>
 ## Install with Composer as you go
 
 1. Go to Magento2 root folder
