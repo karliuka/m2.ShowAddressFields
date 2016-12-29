@@ -1,8 +1,8 @@
 {
-    "name": "faonni/module-showaddressfields",
+    "name": "faonni/module-customer-create-address",
     "description": "Show Address Fields in Customer Registration Form.",
     "type": "magento2-module",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"license": [
 		"OSL-3.0"
 		],

@@ -9,7 +9,7 @@ Show Address Fields in Customer Registration Form.
 2. Enter following commands to install module:
 
     ```bash
-    composer require faonni/module-showaddressfields
+    composer require faonni/module-customer-create-address
     ```
    Wait while dependencies are updated.
 
