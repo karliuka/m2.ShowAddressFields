@@ -2,6 +2,10 @@
 
 Show Address Fields in Customer Registration Form.
 
+## Compatibility
+
+Magento CE(EE) 2.0.x, 2.1.x, 2.2.x, 2.3.x
+
 <img alt="Magento2 ShowAddressFields" src="https://karliuka.github.io/m2/showaddressfields/register.png" style="width:100%"/>
 
 ## Install with Composer as you go
