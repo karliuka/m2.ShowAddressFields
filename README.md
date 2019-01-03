@@ -23,7 +23,7 @@ Magento CE(EE) 2.0.x, 2.1.x, 2.2.x, 2.3.x
 
     ```bash
     php bin/magento setup:upgrade
-    php bin/magento setup:static-content:deploy
+    php bin/magento setup:di:compile
     php bin/magento setup:static-content:deploy  (optional)
     ```
 ## Uninstall
