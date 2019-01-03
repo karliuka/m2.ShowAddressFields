@@ -1,7 +1,6 @@
 <?php
 /**
- * Copyright © 2011-2018 Karliuka Vitalii(karliuka.vitalii@gmail.com)
- * 
+ * Copyright © Karliuka Vitalii(karliuka.vitalii@gmail.com)
  * See COPYING.txt for license details.
  */
 namespace Faonni\ShowAddressFields\Setup;
@@ -12,30 +11,30 @@ use Magento\Framework\Setup\SchemaSetupInterface;
 use Magento\Config\Model\ResourceModel\Config\Data\CollectionFactory as ConfigCollectionFactory;
 
 /**
- * ShowAddressFields Uninstall
+ * Uninstall schema
  */
 class Uninstall implements UninstallInterface
 {
     /**
-     * Config Collection Factory
+     * Config collection factory
      *
      * @var \Magento\Config\Model\ResourceModel\Config\Data\CollectionFactory
      */
     private $_configCollectionFactory;
 
     /**
-     * Initialize Setup
+     * Initialize schema
      *
      * @param ConfigCollectionFactory $configCollectionFactory
      */
     public function __construct(
-		ConfigCollectionFactory $configCollectionFactory
-	) {
+        ConfigCollectionFactory $configCollectionFactory
+    ) {
         $this->_configCollectionFactory = $configCollectionFactory;
     }
-    
+
     /**
-     * Uninstall DB Schema for a Module ShowAddressFields
+     * Uninstall DB schema
      *
      * @param SchemaSetupInterface $setup
      * @param ModuleContextInterface $context
@@ -44,14 +43,14 @@ class Uninstall implements UninstallInterface
     public function uninstall(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
         $setup->startSetup();
-        
+
         $this->removeConfig();
-        
+
         $setup->endSetup();
     }
-    
+
     /**
-     * Remove Config
+     * Remove config
      *
      * @return void
      */
@@ -59,11 +58,11 @@ class Uninstall implements UninstallInterface
     {
         $path = 'customer/address/showaddressfields';
         /** @var \Magento\Config\Model\ResourceModel\Config\Data\Collection $collection */
-        $collection = $this->_configCollectionFactory->create(); 
+        $collection = $this->_configCollectionFactory->create();
         $collection->addPathFilter($path);
 
         foreach ($collection as $config) {
-			$config->delete(); 	
+            $config->delete();
         }
-    }    
+    }
 }
