@@ -37,9 +37,9 @@ This works only with modules defined as Composer packages.
 
     ```bash
     php bin/magento module:uninstall -r Faonni_ShowAddressFields
-  
+
 #### Remove Extension
-    
+
 1. Go to Magento2 root folder
 
 2. Enter following commands to remove:

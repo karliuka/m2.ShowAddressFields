@@ -57,7 +57,6 @@ class Uninstall implements UninstallInterface
     private function removeConfig()
     {
         $path = 'customer/address/showaddressfields';
-        /** @var \Magento\Config\Model\ResourceModel\Config\Data\Collection $collection */
         $collection = $this->_configCollectionFactory->create();
         $collection->addPathFilter($path);
 
